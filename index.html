@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/000000/password-window.png" alt="password-window"/></div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="container">
+       <h1>Password Manager</h1>
+        <p>We're thrilled to have you here. Your digital life contains a myriad of passwords, and we know how
+            challenging it can be to manage them all. That's why we're here to make it easy for you.</p>
+    
+    
+   <form action="/submit" method="post">
+    <h2>Save Your Passwords</h2>
+     <label for="website">Website</label>
+     <input type="text" name="website" id="website" required autofocus><br><br>
+
+     <label for="username">Username</label>
+     <input type="text" name="username" id="username" required><br> <br>
+
+     <label for="password">Password</label>
+     <input type="password" name="password" id="password" required>
+     <button type="submit" class="btn">Submit</button>
+   </form>
+
+   <h3>Your Passwords : <span id="alert">(Copied..!)</span></h3>
+    <table class="tbl">
+        
+        <tr>
+            <th>Website</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Delete</th>
+        </tr>
+    </table>    
+</div>
+<script src="script.js"></script>
+</body>
+</html>
